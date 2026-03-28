@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌿 Nature Studio</h1>
+  <nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('services')">Services</a>
+    <a onclick="showPage('albums')">Albums</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <h2>Explore Nature</h2>
+  <div class="grid">
+
+    <div class="card" onclick="openGallery('animals')">
+      <img src="https://picsum.photos/id/237/400">
+      <p>Animals</p>
+    </div>
+
+    <div class="card" onclick="openGallery('birds')">
+      <img src="https://picsum.photos/id/1024/400">
+      <p>Birds</p>
+    </div>
+
+    <div class="card" onclick="openGallery('trees')">
+      <img src="https://picsum.photos/id/1040/400">
+      <p>Trees</p>
+    </div>
+
+    <div class="card" onclick="openGallery('hills')">
+      <img src="https://picsum.photos/id/1043/400">
+      <p>Hills</p>
+    </div>
+
+    <div class="card" onclick="openGallery('mountain')">
+      <img src="https://picsum.photos/id/1018/400">
+      <p>Mountain</p>
+    </div>
+
+    <div class="card" onclick="openGallery('forest')">
+      <img src="https://picsum.photos/id/1011/400">
+      <p>Forest</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h2>About</h2>
+  <p>Nature Studio captures the beauty of nature.</p>
+  <p>We create stunning visual experiences.</p>
+  <p>Explore nature through our photography.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="page">
+  <h2>Our Services</h2>
+  <div class="grid">
+
+    <div class="card" onclick="openGallery('animals')">
+      <img src="https://picsum.photos/id/593/400">
+      <p>Animals</p>
+    </div>
+
+    <div class="card" onclick="openGallery('birds')">
+      <img src="https://picsum.photos/id/1062/400">
+      <p>Birds</p>
+    </div>
+
+    <div class="card" onclick="openGallery('trees')">
+      <img src="https://picsum.photos/id/1056/400">
+      <p>Trees</p>
+    </div>
+
+    <div class="card" onclick="openGallery('mountain')">
+      <img src="https://picsum.photos/id/1002/400">
+      <p>Mountain</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALBUM -->
+<section id="albums" class="page">
+  <h2>Albums</h2>
+  <div class="grid">
+
+    <div class="card" onclick="openGallery('frame')">
+      <img src="https://picsum.photos/id/200/400">
+      <p>Photo Frames</p>
+    </div>
+
+    <div class="card" onclick="openGallery('book')">
+      <img src="https://picsum.photos/id/210/400">
+      <p>Book Album</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+  <h2>Contact</h2>
+  <p onclick="contactOptions('phone')">📞 9876543210</p>
+  <p onclick="contactOptions('mail')">📧 abcd@gmail.com</p>
+</section>
+
+<!-- GALLERY -->
+<div id="gallery">
+  <span class="close" onclick="closeGallery()">❌</span>
+  <span class="arrow left" onclick="prev()">❮</span>
+  <img id="img">
+  <span class="arrow right" onclick="next()">❯</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
